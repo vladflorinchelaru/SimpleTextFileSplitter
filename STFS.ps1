@@ -1,4 +1,4 @@
-﻿# STFS Simple Text File Splitter 1.0 (C) Vlad-Florin Chelaru, 10.01.2021, Cluj-Napoca, Romania
+# STFS Simple Text File Splitter 1.0 (C) Vlad-Florin Chelaru, 10.01.2021, Cluj-Napoca, Romania
 # Available at github.com/vladflorinchelaru
 echo 'STFS Simple Text File Splitter 1.0 (C) Vlad-Florin Chelaru 10.01.2021, Cluj-Napoca, Romania'
 echo 'github.com/vladflorinchelaru' 
@@ -19,9 +19,9 @@ while($destfiles[-1] -ne ''){
 $i=0
 foreach ($line in Get-Content $sourcefile){
     echo $line >> $destfiles[$i]
-    echo "Written line $line to file no. $i which is $destfiles[$i]"
+    echo "Written line $line to file no. $i which is $($destfiles[$i])."
     $i++
-    echo "New value of i is $i"
+    echo "New value of i is $i."
     if($i -eq $destfiles.Length-1) {
         $i = 0
         echo "Value of i reached max file number, reverting to $i"
